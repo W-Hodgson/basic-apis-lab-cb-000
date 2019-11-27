@@ -10,6 +10,8 @@ class RepositoriesController < ApplicationController
       req.params['client_secret'] = 'ebd56e27d043a95d8bdf0e8e37fe8c8cb8eb481a'
       req.params['q'] = 'query'
     end
+
+    body = JSON.parse(resp.body)
     render 'search'
   end
 end
