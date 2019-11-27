@@ -10,7 +10,7 @@
     <% @results.each do |res| %>
       <li>
         <%= res["name"] %> <br>
-        <%= link_to res["owner"]["html_url"], res["owner"]"[html_url"] %> <br>
+        <%= link_to res["owner"]["html_url"], res["owner"]["html_url"] %> <br>
         <%= res[:description] %>
       </li>
     <% end %>
