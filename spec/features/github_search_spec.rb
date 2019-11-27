@@ -9,6 +9,6 @@ RSpec.describe "Searching Github", type: :feature do
     fill_in 'query', with: "tetris"
     click_button "Search Github!"
 
-    expect(page).to have_link("https://github.com/chvin", href: "https://github.com/chvin")
+    expect(page).to have_content("Tetris")
   end
 end
